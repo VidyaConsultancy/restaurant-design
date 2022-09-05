@@ -4,6 +4,37 @@
 
   &-box
     grid-column: auto / span 1
+    display: flex
+    flex-direction: column
+    justify-content: center
 
     &--content
       padding: 6em 4em
+
+      .description + .description
+        margin-top: 2em
+
+    &--img
+      align-items: center
+
+  &-list
+    display: flex
+    flex-direction: column
+    gap: 1.5em
+
+  &-item
+    display: flex
+    align-items: center
+    gap: 1.5em
+
+    & > span
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      padding: 12px
+      border-radius: 50%
+
+    & h4
+      text-transform: capitalize
+      font-size: 18px
+      font-weight: $fw-500

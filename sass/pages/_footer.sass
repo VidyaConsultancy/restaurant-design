@@ -1,0 +1,31 @@
+.footer
+  &-top
+    padding: 3em 0
+
+  &-bottom
+    padding: 1em
+    text-align: center
+
+  &-row
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    gap: 2em
+
+    & + .footer-row
+      margin-top: 20px
+
+  &-col
+    grid-column: auto / span 3
+
+  &-title
+    text-transform: uppercase
+    letter-spacing: 1px
+    font-weight: $fw-500
+    margin-bottom: 0.5em
+
+  &-social
+    display: flex
+    gap: 1em
+
+  address
+    font-style: normal
